@@ -1,0 +1,1543 @@
+<html lang="en">
+ <head>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Website Development Services | Custom Web Solutions</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #ffffff;
+            min-height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .img-logo {
+             width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-circle:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #667eea;
+            letter-spacing: 2px;
+        }
+
+        .hero-headline {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-subheadline {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(231, 76, 60, 0.4);
+            background: #c0392b;
+        }
+
+        /* Trust Indicators */
+        .trust-bar {
+            background: #f8f9fa;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #6c757d;
+            font-weight: 500;
+        }
+
+        .trust-icon {
+            font-size: 1.5rem;
+            color: #28a745;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f1f3f4;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .service-icon {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            color: #667eea;
+        }
+
+        .service-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .service-description {
+            color: #6c757d;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-features li {
+            color: #28a745;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        .service-features li::before {
+            content: '✓ ';
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 80px 0;
+            color: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .benefit-description {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+        }
+
+        .testimonial-quote {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #495057;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-image {
+            width: 70px;
+            height: 70px;
+            border-radius: 70%;
+            object-fit: cover;
+            border: 2px solid #667eea;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .author-info h4 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .author-info p {
+            margin: 0;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            background: #2c3e50;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .cta-description {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.1rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #667eea;
+        }
+
+        /* Responsive Design */
+        
+        /* Large Desktop (1200px+) */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            .hero-headline {
+                font-size: 4rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .benefits-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Desktop (992px - 1199px) */
+        @media (max-width: 1199px) and (min-width: 992px) {
+            .hero-headline {
+                font-size: 3.2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Tablet Landscape (768px - 991px) */
+        @media (max-width: 991px) and (min-width: 768px) {
+            .hero-headline {
+                font-size: 2.8rem;
+            }
+
+            .hero-subheadline {
+                font-size: 1.3rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .trust-items {
+                gap: 40px;
+            }
+
+            .section-title {
+                font-size: 2.4rem;
+            }
+        }
+
+        /* Tablet Portrait (576px - 767px) */
+        @media (max-width: 767px) and (min-width: 576px) {
+            .hero {
+                padding: 70px 0;
+            }
+
+            .logo-circle {
+                width: 100px;
+                height: 100px;
+            }
+
+            .logo-text {
+                font-size: 2.2rem;
+            }
+
+            .logo-container {
+                margin-bottom: 25px;
+            }
+
+            .hero-headline {
+                font-size: 2.4rem;
+                line-height: 1.3;
+            }
+
+            .hero-subheadline {
+                font-size: 1.1rem;
+                margin-bottom: 35px;
+            }
+
+            .hero-cta {
+                padding: 16px 35px;
+                font-size: 1.1rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .service-card {
+                padding: 35px 25px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .trust-items {
+                gap: 25px;
+                justify-content: space-around;
+            }
+
+            .trust-item {
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+
+            .section-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 40px;
+            }
+
+            .contact-info {
+                gap: 30px;
+            }
+
+            .contact-item {
+                font-size: 1rem;
+            }
+        }
+
+        /* Mobile Large (480px - 575px) */
+        @media (max-width: 575px) and (min-width: 480px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero-headline {
+                font-size: 2.1rem;
+                line-height: 1.2;
+                margin-bottom: 15px;
+            }
+
+            .hero-subheadline {
+                font-size: 1rem;
+                margin-bottom: 30px;
+            }
+
+            .hero-cta {
+                padding: 14px 30px;
+                font-size: 1rem;
+            }
+
+            .services, .benefits, .testimonials, .final-cta {
+                padding: 50px 0;
+            }
+
+            .services-grid, .benefits-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .service-card, .benefit-card, .testimonial-card {
+                padding: 30px 20px;
+            }
+
+            .service-icon, .benefit-icon {
+                font-size: 2.8rem;
+                margin-bottom: 20px;
+            }
+
+            .service-title, .benefit-title {
+                font-size: 1.4rem;
+            }
+
+            .trust-items {
+                gap: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .trust-item {
+                font-size: 0.85rem;
+            }
+
+            .section-title {
+                font-size: 1.9rem;
+                margin-bottom: 12px;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 35px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .cta-title {
+                font-size: 2rem;
+            }
+
+            .cta-description {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Mobile Small (320px - 479px) */
+        @media (max-width: 479px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 50px 0;
+            }
+
+            .logo-circle {
+                width: 80px;
+                height: 80px;
+            }
+
+            .logo-text {
+                font-size: 1.8rem;
+            }
+
+            .logo-container {
+                margin-bottom: 20px;
+            }
+
+            .hero-headline {
+                font-size: 1.8rem;
+                line-height: 1.2;
+                margin-bottom: 12px;
+            }
+
+            .hero-subheadline {
+                font-size: 0.95rem;
+                margin-bottom: 25px;
+                line-height: 1.5;
+            }
+
+            .hero-cta {
+                padding: 12px 25px;
+                font-size: 0.95rem;
+                border-radius: 25px;
+            }
+
+            .services, .benefits, .testimonials, .final-cta {
+                padding: 40px 0;
+            }
+
+            .trust-bar {
+                padding: 20px 0;
+            }
+
+            .services-grid, .benefits-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .service-card, .benefit-card, .testimonial-card {
+                padding: 25px 15px;
+                border-radius: 12px;
+            }
+
+            .service-icon, .benefit-icon {
+                font-size: 2.5rem;
+                margin-bottom: 15px;
+            }
+
+            .service-title, .benefit-title {
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+
+            .service-description, .benefit-description {
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+
+            .service-features {
+                font-size: 0.85rem;
+            }
+
+            .trust-items {
+                gap: 15px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .trust-item {
+                font-size: 0.8rem;
+                text-align: center;
+            }
+
+            .trust-icon {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 1.7rem;
+                margin-bottom: 10px;
+                line-height: 1.3;
+            }
+
+            .section-subtitle {
+                font-size: 0.95rem;
+                margin-bottom: 30px;
+                line-height: 1.5;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .contact-item {
+                font-size: 0.9rem;
+                justify-content: center;
+            }
+
+            .contact-icon {
+                font-size: 1.3rem;
+            }
+
+            .cta-title {
+                font-size: 1.8rem;
+                line-height: 1.3;
+            }
+
+            .cta-description {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            .testimonial-quote {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .author-avatar {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+
+            .author-info h4 {
+                font-size: 1rem;
+            }
+
+            .author-info p {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Extra Small Mobile (below 320px) */
+        @media (max-width: 319px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .hero-headline {
+                font-size: 1.6rem;
+            }
+
+            .hero-subheadline {
+                font-size: 0.9rem;
+            }
+
+            .hero-cta {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .service-card, .benefit-card, .testimonial-card {
+                padding: 20px 12px;
+            }
+
+            .service-icon, .benefit-icon {
+                font-size: 2.2rem;
+            }
+
+            .trust-item {
+                font-size: 0.75rem;
+            }
+        }
+
+        /* Landscape orientation adjustments */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero {
+                padding: 30px 0;
+            }
+
+            .services, .benefits, .testimonials, .final-cta {
+                padding: 40px 0;
+            }
+
+            .hero-headline {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            .hero-subheadline {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* High DPI displays */
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .service-card, .benefit-card, .testimonial-card {
+                border-width: 0.5px;
+            }
+        }
+          
+
+        /* ========================
+   MOBILE FIX FOR QUOTE MODAL
+   ======================== */
+
+/* Make modal scrollable on small screens */
+.quote-content {
+    max-height: 90vh;       /* Prevents overflow */
+    overflow-y: auto;       /* Allows scrolling inside */
+}
+
+/* Make close button always visible */
+.quote-content .close {
+    position: sticky;
+    top: 10px;
+    z-index: 9999;
+}
+
+/* Phones ≤ 480px */
+@media (max-width: 480px) {
+    .quote-modal {
+        align-items: flex-start;   /* Moves modal down into view */
+        padding-top: 30px;
+    }
+
+}
+
+
+
+
+/* ========================
+   MOBILE FIX FOR QUOTE MODAL
+   ======================== */
+
+/* Make modal scrollable on small screens */
+.quote-content {
+    max-height: 90vh;       /* Prevents overflow */
+    overflow-y: auto;       /* Allows scrolling inside */
+}
+
+/* Make close button always visible */
+.quote-content .close {
+    position: sticky;
+    top: 10px;
+    z-index: 9999;
+}
+
+/* Phones ≤ 480px */
+@media (max-width: 480px) {
+    .quote-modal {
+        align-items: flex-start;   /* Moves modal down into view */
+        padding-top: 30px;
+    }
+
+    .quote-content {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 18px;
+    }
+
+    .quote-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .quote-content p {
+        font-size: 0.9rem;
+    }
+
+    .quote-contact p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+    </style>
+  <main><!-- Hero Section -->
+   <section class="hero">
+    <div class="container">
+     <div class="hero-content">
+      <div class="logo-container">
+       <div class="logo-circle" id="logo-circle"><span class="logo-text" id="logo-text"></span>
+        <img class="img-logo" src="img/logo.jpg" alt="">
+       </div>
+      </div>
+      <h1 class="hero-headline" id="main-headline">Professional Website Development That Drives Results</h1>
+      <p class="hero-subheadline" id="subheadline">Custom websites built for your success. Mobile-responsive, SEO-optimized, and designed to convert visitors into customers. Launch your professional online presence in 7 - 14 days</p><button class="hero-cta" id="cta-button" onclick="handleCTAClick()">Get Your Free Website Quote</button>
+     </div>
+    </div>
+   </section><!-- Trust Indicators -->
+   <section class="trust-bar">
+    <div class="container">
+     <div class="trust-items">
+      <div class="trust-item"><span class="trust-icon">✓</span> <span>213+ Websites Delivered</span>
+      </div>
+      <div class="trust-item"><span class="trust-icon">✓</span> <span>98.5% Client Satisfaction</span>
+      </div>
+      <div class="trust-item"><span class="trust-icon">✓</span> <span>7 - 14 Days Delivery</span>
+      </div>
+      <div class="trust-item"><span class="trust-icon">✓</span> <span>30 or More Days Support Included</span>
+      </div>
+     </div>
+    </div>
+   </section><!-- Services Section -->
+   <section class="services">
+    <div class="container">
+     <h2 class="section-title" id="services-title">Complete Website Development Services</h2>
+     <p class="section-subtitle">Everything you need to establish a powerful online presence and grow your business</p>
+     <div class="services-grid">
+      <div class="service-card">
+       <div class="service-icon">
+        🎨
+       </div>
+       <h3 class="service-title">Custom Web Design</h3>
+       <p class="service-description">Unique, brand-focused designs that reflect your business personality and engage your target audience.</p>
+       <ul class="service-features">
+        <li>Mobile-first responsive design</li>
+        <li>Brand identity integration</li>
+        <li>User experience optimization</li>
+        <li>Modern, professional layouts</li>
+       </ul>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        ⚡
+       </div>
+       <h3 class="service-title">Performance Optimization</h3>
+       <p class="service-description">Lightning-fast websites that rank higher on Google and provide exceptional user experiences.</p>
+       <ul class="service-features">
+        <li>Page speed optimization</li>
+        <li>SEO-friendly structure</li>
+        <li>Core Web Vitals optimization</li>
+        <li>Image compression &amp; CDN</li>
+       </ul>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        🛡️
+       </div>
+       <h3 class="service-title">Secure &amp; Reliable</h3>
+       <p class="service-description">Enterprise-grade security and reliability to protect your business and customer data.</p>
+       <ul class="service-features">
+        <li>SSL certificates included</li>
+        <li>Regular security updates</li>
+        <li>Daily automated backups</li>
+        <li>99.9% uptime guarantee</li>
+       </ul>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        💼
+       </div>
+       <h3 class="service-title">E-commerce Solutions</h3>
+       <p class="service-description">Complete online stores with payment processing, inventory management, and sales optimization.</p>
+       <ul class="service-features">
+        <li>Payment gateway integration</li>
+        <li>Inventory management system</li>
+        <li>Order tracking &amp; notifications</li>
+        <li>Conversion rate optimization</li>
+       </ul>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        📱
+       </div>
+       <h3 class="service-title">Mobile Optimization</h3>
+       <p class="service-description">Perfect performance across all devices with mobile-first design principles and touch optimization.</p>
+       <ul class="service-features">
+        <li>Responsive across all devices</li>
+        <li>Touch-friendly interfaces</li>
+        <li>Mobile page speed optimization</li>
+        <li>Progressive Web App features</li>
+       </ul>
+      </div>
+      <div class="service-card">
+       <div class="service-icon">
+        📈
+       </div>
+       <h3 class="service-title">Analytics &amp; Growth</h3>
+       <p class="service-description">Comprehensive tracking and analytics to measure performance and drive continuous improvement.</p>
+       <ul class="service-features">
+        <li>Google Analytics setup</li>
+        <li>Conversion tracking</li>
+        <li>Performance monitoring</li>
+        <li>Monthly growth reports</li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </section><!-- Benefits Section -->
+   <section class="benefits">
+    <div class="container">
+     <h2 class="section-title" id="benefits-title">Why Choose Our Website Development Team?</h2>
+     <p class="section-subtitle">Proven expertise, transparent process, and results that drive your business forward</p>
+     <div class="benefits-grid">
+      <div class="benefit-card">
+       <div class="benefit-icon">
+        🚀
+       </div>
+       <h3 class="benefit-title">Fast 7 - 14 Days Delivery</h3>
+       <p class="benefit-description">Your professional website ready in just 14 days. No lengthy delays or endless revisions - just results.</p>
+      </div>
+      <div class="benefit-card">
+       <div class="benefit-icon">
+        💰
+       </div>
+       <h3 class="benefit-title">Transparent Pricing</h3>
+       <p class="benefit-description">Clear, upfront pricing with no hidden fees. Flexible payment plans to fit your budget.</p>
+      </div>
+      <div class="benefit-card">
+       <div class="benefit-icon">
+        🎯
+       </div>
+       <h3 class="benefit-title">Conversion Focused</h3>
+       <p class="benefit-description">Every element designed to turn visitors into customers using proven conversion optimization strategies.</p>
+      </div>
+      <div class="benefit-card">
+       <div class="benefit-icon">
+        🔧
+       </div>
+       <h3 class="benefit-title">30-Day Support</h3>
+       <p class="benefit-description">Complete support for 30 days after launch, plus affordable maintenance plans for ongoing success.</p>
+      </div>
+      <div class="benefit-card">
+       <div class="benefit-icon">
+        📊
+       </div>
+       <h3 class="benefit-title">Data-Driven Design</h3>
+       <p class="benefit-description">Every design decision backed by user research and analytics for maximum business impact.</p>
+      </div>
+      <div class="benefit-card">
+       <div class="benefit-icon">
+        🏆
+       </div>
+       <h3 class="benefit-title">Proven Results</h3>
+       <p class="benefit-description">500+ successful projects with measurable increases in leads, sales, and online visibility.</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Testimonials Section -->
+   <section class="testimonials">
+    <div class="container">
+     <h2 class="section-title" id="testimonial-title">What Our Clients Say</h2>
+     <p class="section-subtitle">Real results from real businesses who trusted us with their online presence</p>
+     <div class="testimonials-grid">
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"Our new website increased our online leads by 300% in the first month. The team delivered exactly what they promised - on time and on budget."</p>
+       <div class="testimonial-author"><img src="img/queen.jpg" alt="Merry Etetor" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         SM
+        </div>
+        <div class="author-info">
+         <h4>Merry Etetor</h4>
+         <p>CEO, Mitchell Marketing</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"Professional, responsive, and results-driven. Our e-commerce sales doubled within 6 weeks of launching our new site."</p>
+       <div class="testimonial-author"><img src="img/James.jpg" alt="James Rodriguez" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         JR
+        </div>
+        <div class="author-info">
+         <h4>James Rodriguez</h4>
+         <p>Owner, Rodriguez Retail</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"The best investment we made for our business. Our website now ranks #1 on Google for our main keywords and generates consistent leads."</p>
+       <div class="testimonial-author"><img src="img/Lisa-Thompson.jpg" alt="Lisa Thompson" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         LT
+        </div>
+        <div class="author-info">
+         <h4>Lisa Thompson</h4>
+         <p>Director, Thompson Consulting</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"Exceptional service from start to finish. They understood our vision and created a website that perfectly represents our brand. Highly recommend!"</p>
+       <div class="testimonial-author"><img src="img/Victor-Samson.jpg" alt="Victor Samson" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         MC
+        </div>
+        <div class="author-info">
+         <h4>Victor Samson</h4>
+         <p>Founder, Chen Tech Solutions</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"The mobile optimization alone was worth every penny. Our mobile traffic increased by 250% and bounce rate dropped significantly."</p>
+       <div class="testimonial-author"><img src="img/Amanda-Foster.jpg" alt="Amanda Foster" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         AF
+        </div>
+        <div class="author-info">
+         <h4>Amanda Foster</h4>
+         <p>Marketing Director, Foster &amp; Co</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"Outstanding work! They transformed our outdated website into a modern, high-converting sales machine. Our revenue has tripled since launch."</p>
+       <div class="testimonial-author"><img src="img/David-Park.jpg" alt="David Park" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         DP
+        </div>
+        <div class="author-info">
+         <h4>David Park</h4>
+         <p>CEO, Park Industries</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"Best web development team we've worked with. They're responsive, creative, and truly care about delivering results. Worth every dollar!"</p>
+       <div class="testimonial-author"><img src="img/Rachel-Green.jpg" alt="Rachel Green" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         RG
+        </div>
+        <div class="author-info">
+         <h4>Rachel Green</h4>
+         <p>Owner, Green Boutique</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"They didn't just build a website - they built a complete digital solution. The analytics setup helps us make data-driven decisions daily."</p>
+       <div class="testimonial-author"><img src="img/Ikenna-Uche.jpg" alt="Ikenna Uche" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         KM
+        </div>
+        <div class="author-info">
+         <h4>Ikenna Uche</h4>
+         <p>Operations Manager, Martinez Logistics</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"Incredible attention to detail and customer service. They made the entire process smooth and stress-free. Our customers love the new site!"</p>
+       <div class="testimonial-author"><img src="img/Jonh-Watson.jpg" alt="Jonh Watson" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         EW
+        </div>
+        <div class="author-info">
+         <h4>Jonh Watson</h4>
+         <p>Director, Watson Healthcare</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"Fast, professional, and results-oriented. Our booking rate increased by 180% in the first two months. Couldn't be happier with the outcome!"</p>
+       <div class="testimonial-author"><img src="img/Mia-Danna.jpg" alt="Mia Danna Taylor" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         RT
+        </div>
+        <div class="author-info">
+         <h4>Mia Danna Taylor</h4>
+         <p>Owner, Taylor's Restaurant Group</p>
+        </div>
+       </div>
+      </div>
+      <div class="testimonial-card">
+       <p class="testimonial-quote">"They exceeded all expectations. The website is beautiful, fast, and generates leads on autopilot. Best business decision we made this year!"</p>
+       <div class="testimonial-author"><img src="img/Evans-Anderson.jpg" alt="Evans Anderson" class="author-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="author-avatar">
+         NA
+        </div>
+        <div class="author-info">
+         <h4>Evans Anderson</h4>
+         <p>Founder, Anderson Real Estate</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Final CTA Section -->
+   <section class="final-cta">
+    <div class="container">
+     <div class="cta-content">
+      <h2 class="cta-title">Ready to Transform Your Online Presence?</h2>
+      <p class="cta-description">Join 500+ successful businesses who chose <span id="company-name">WebDev Solutions Pro</span> for their website development needs.</p>
+      <div class="contact-info">
+       <div class="contact-item"><span class="contact-icon">📞</span> <span id="phone-number">+2347048309498</span>
+       </div>
+       <div class="contact-item"><span class="contact-icon">✉️</span> <span id="email-address">wisdomge.dev@gmail.com</span>
+       </div>
+      </div><button class="hero-cta" onclick="handleCTAClick()">Start Your Project Today - Free Quote</button>
+     </div>
+    </div>
+   </section>
+  </main>
+
+  
+  <script>
+        // Default configuration
+        const defaultConfig = {
+            logo_text: "WD",
+            main_headline: "Professional Website Development That Drives Results",
+            subheadline: "Custom websites built for your success. Mobile-responsive, SEO-optimized, and designed to convert visitors into customers. Launch your professional online presence in 7 - 14 days",
+            cta_button_text: "Get Your Free Website Quote",
+            services_title: "Complete Website Development Services",
+            benefits_title: "Why Choose Our Website Development Team?",
+            testimonial_title: "What Our Clients Say",
+            company_name: "WebDev Solutions Pro",
+            phone_number: "+234 816 326 7518",
+            email_address: "wisdomge.dev@gmail.com",
+            primary_color: "#667eea",
+            secondary_color: "#e74c3c",
+            text_color: "#2c3e50",
+            background_color: "#ffffff",
+            accent_color: "#f093fb",
+            font_family: "Segoe UI",
+            font_size: 16
+        };
+
+        // Handle CTA button clicks
+        function handleCTAClick() {
+            showContactModal();
+        }
+
+        function showContactModal() {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                backdrop-filter: blur(5px);
+                overflow-y: auto;
+                padding: 20px;
+                box-sizing: border-box;
+                -webkit-overflow-scrolling: touch; 
+            `;
+
+            const modalContent = document.createElement('div');
+            modalContent.style.cssText = `
+                background: white;
+                padding: 40px;
+                border-radius: 20px;
+                max-width: 600px;
+                width: 100%;
+                text-align: center;
+                box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+                position: relative;
+                 max-height: 90vh;
+                 overflow-y: auto;
+                 box-sizing: border-box;
+            `;
+
+            const config = window.elementSdk ? window.elementSdk.config : defaultConfig;
+
+            modalContent.innerHTML = `
+                <h3 style="color: #2c3e50; margin-bottom: 20px; font-size: 2.2rem; font-weight: 700;">Get Your Free Website Quote</h3>
+                <p style="color: #6c757d; margin-bottom: 30px; font-size: 1.1rem; line-height: 1.6;">Ready to transform your business with a professional website? Contact ${config.company_name || defaultConfig.company_name} today for your free consultation and detailed project quote.</p>
+                
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin: 30px 0;">
+                    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-bottom: 20px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">📞</span>
+                            <strong>${config.phone_number || defaultConfig.phone_number}</strong>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">✉️</span>
+                            <strong>${config.email_address || defaultConfig.email_address}</strong>
+                        </div>
+                    </div>
+                    <p style="color: #28a745; font-weight: 600; margin: 0;">✓ Free consultation ✓ No obligation ✓ 24-hour response</p>
+                </div>
+                
+                <a href="http://wizzywebdeveloper.github.io/Client-form/" target="_blank" rel="noopener noreferrer" style="display: inline-block; background: #e74c3c; color: white; text-decoration: none; padding: 18px 45px; border-radius: 30px; font-size: 1.15rem; font-weight: 600; margin: 10px; transition: all 0.3s ease; box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(231, 76, 60, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 20px rgba(231, 76, 60, 0.3)'">Fill Out Client Form →</a>
+                
+                <button onclick="closeModal()" style="background: #667eea; color: white; border: none; padding: 15px 40px; border-radius: 30px; cursor: pointer; font-size: 1.1rem; font-weight: 600; margin: 10px; transition: all 0.3s ease;">Close</button>
+            `;
+
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+
+            // Close modal when clicking outside
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+
+            window.closeModal = () => {
+                document.body.removeChild(modal);
+            };
+        }
+
+        // Element SDK implementation
+        async function onConfigChange(config) {
+            const elements = {
+                'logo-text': config.logo_text || defaultConfig.logo_text,
+                'main-headline': config.main_headline || defaultConfig.main_headline,
+                'subheadline': config.subheadline || defaultConfig.subheadline,
+                'cta-button': config.cta_button_text || defaultConfig.cta_button_text,
+                'services-title': config.services_title || defaultConfig.services_title,
+                'benefits-title': config.benefits_title || defaultConfig.benefits_title,
+                'testimonial-title': config.testimonial_title || defaultConfig.testimonial_title,
+                'company-name': config.company_name || defaultConfig.company_name,
+                'phone-number': config.phone_number || defaultConfig.phone_number,
+                'email-address': config.email_address || defaultConfig.email_address
+            };
+
+            // Update text content
+            Object.entries(elements).forEach(([id, text]) => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.textContent = text;
+                }
+            });
+
+            // Update colors
+            const primaryColor = config.primary_color || defaultConfig.primary_color;
+            const secondaryColor = config.secondary_color || defaultConfig.secondary_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+            const accentColor = config.accent_color || defaultConfig.accent_color;
+
+            // Apply colors to elements
+            const heroSection = document.querySelector('.hero');
+            if (heroSection) {
+                heroSection.style.background = `linear-gradient(135deg, ${primaryColor} 0%, #764ba2 100%)`;
+            }
+
+            const benefitsSection = document.querySelector('.benefits');
+            if (benefitsSection) {
+                benefitsSection.style.background = `linear-gradient(135deg, ${accentColor} 0%, #f5576c 100%)`;
+            }
+
+            const ctaButtons = document.querySelectorAll('.hero-cta');
+            ctaButtons.forEach(button => {
+                button.style.background = secondaryColor;
+            });
+
+            const serviceIcons = document.querySelectorAll('.service-icon');
+            serviceIcons.forEach(icon => {
+                icon.style.color = primaryColor;
+            });
+
+            const logoText = document.querySelector('.logo-text');
+            if (logoText) {
+                logoText.style.color = primaryColor;
+            }
+
+            const logoCircle = document.querySelector('.logo-circle');
+            if (logoCircle) {
+                logoCircle.style.background = backgroundColor;
+            }
+
+            const contactIcons = document.querySelectorAll('.contact-icon');
+            contactIcons.forEach(icon => {
+                icon.style.color = primaryColor;
+            });
+
+            const trustIcons = document.querySelectorAll('.trust-icon');
+            trustIcons.forEach(icon => {
+                icon.style.color = '#28a745';
+            });
+
+            // Update font family
+            const customFont = config.font_family || defaultConfig.font_family;
+            const baseFontStack = '-webkit-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+            document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+
+            // Update font sizes
+            const baseSize = config.font_size || defaultConfig.font_size;
+            const heroHeadline = document.querySelector('.hero-headline');
+            const sectionTitles = document.querySelectorAll('.section-title');
+            const heroSubheadline = document.querySelector('.hero-subheadline');
+
+            if (heroHeadline) {
+                heroHeadline.style.fontSize = `${baseSize * 2.2}px`;
+            }
+
+            sectionTitles.forEach(title => {
+                title.style.fontSize = `${baseSize * 1.75}px`;
+            });
+
+            if (heroSubheadline) {
+                heroSubheadline.style.fontSize = `${baseSize * 0.875}px`;
+            }
+
+            document.body.style.fontSize = `${baseSize}px`;
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.primary_color || defaultConfig.primary_color,
+                        set: (value) => {
+                            config.primary_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ primary_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.secondary_color || defaultConfig.secondary_color,
+                        set: (value) => {
+                            config.secondary_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ secondary_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ text_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ background_color: value });
+                            }
+                        }
+                    },
+                    {
+                        get: () => config.accent_color || defaultConfig.accent_color,
+                        set: (value) => {
+                            config.accent_color = value;
+                            if (window.elementSdk) {
+                                window.elementSdk.setConfig({ accent_color: value });
+                            }
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        config.font_family = value;
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_family: value });
+                        }
+                    }
+                },
+                fontSizeable: {
+                    get: () => config.font_size || defaultConfig.font_size,
+                    set: (value) => {
+                        config.font_size = value;
+                        if (window.elementSdk) {
+                            window.elementSdk.setConfig({ font_size: value });
+                        }
+                    }
+                }
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ['logo_text', config.logo_text || defaultConfig.logo_text],
+                ['main_headline', config.main_headline || defaultConfig.main_headline],
+                ['subheadline', config.subheadline || defaultConfig.subheadline],
+                ['cta_button_text', config.cta_button_text || defaultConfig.cta_button_text],
+                ['services_title', config.services_title || defaultConfig.services_title],
+                ['benefits_title', config.benefits_title || defaultConfig.benefits_title],
+                ['testimonial_title', config.testimonial_title || defaultConfig.testimonial_title],
+                ['company_name', config.company_name || defaultConfig.company_name],
+                ['phone_number', config.phone_number || defaultConfig.phone_number],
+                ['email_address', config.email_address || defaultConfig.email_address]
+            ]);
+        }
+
+        // Initialize Element SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a00a50010c1ddec',t:'MTc2MzM5NzM2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
